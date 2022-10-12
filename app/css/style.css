@@ -18,6 +18,12 @@
           box-sizing: border-box;
 }
 
+::after,
+::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 .container {
   max-width: 1380px;
   min-width: 315px;
@@ -634,8 +640,8 @@ a:hover {
   height: 42px;
   border-radius: 21px;
   position: absolute;
-  left: -5px;
-  top: -17px;
+  left: -10px;
+  top: -15px;
 }
 
 .provider__btn-circuit:hover {
