@@ -1,0 +1,131 @@
+.publication {
+    background-color: $bg;
+    border-radius: 12px 12px 0px 0px;
+    &__body{
+        padding-top: 30px;
+        padding-bottom: 15px;
+        display: flex;
+        flex-direction: column;
+        &-switch {
+            align-self: center;
+            background-color: $separator;
+            border-radius: 10px;
+            border: 2px solid $separator;
+            margin-bottom: 15px;
+        }
+        &-btn {
+            padding: 10px 30px;
+            border-radius: 10px;
+            box-shadow: none;
+            background: transparent;
+            color: $main-alt;
+            &:hover {
+                background-color: $bg;
+            }
+            &:active {
+                background-color: $white;
+            }
+            &--active {
+                background-color: $white;
+            }
+        }
+        &-secondbtn {
+            align-self: center;
+            margin: 15px 0;
+        }
+    }
+    &__link {
+        display: flex;
+        align-items: center;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        &:hover path {
+            stroke: $accent;
+
+        }
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 37px;
+        background: $red-text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-top: 5px;
+    }
+    &__list {
+        margin: 0 -15px;
+        &-body {
+            padding: 15px;
+            &--disable {
+                display: none;
+            }
+        }
+        &-card {
+            display: flex;
+            flex-direction: column;
+            border-radius: 8px;
+            background-color: $white;
+            height: 100%;
+        }
+        &-pic {
+            border-radius: 8px 8px 0 0;
+        }
+        &-content {
+            padding: 30px;
+        }
+        &-link {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 20px;
+        }
+        &-date {
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 15px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: $text;
+            padding: 15px 0;
+            border-bottom: 4px solid $separator;
+        }
+        &-text {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 22px;
+            color: $black;
+            margin-top: 15px;
+        }
+
+    }
+}
+@media screen and (min-width:648px) {
+    .publication {
+        &__list {
+            display: flex;
+            flex-wrap: wrap;
+            &-body{
+                width: 50%;
+                &--media {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width:904px) {
+    .publication {
+        &__list {
+            &-body{
+                width: 33.333%;
+            }
+        }
+    }
+}
+
+

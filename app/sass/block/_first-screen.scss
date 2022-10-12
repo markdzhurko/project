@@ -1,0 +1,22 @@
+.first-screen {
+    background-image: url(../../img/body-img.svg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 600px;
+}
+    @media screen and (min-width: 648px) {
+        .first-screen {
+            background-size: 1024px;
+            }
+    }
+
+    @media screen and (min-width: 904px) {
+        .first-screen {
+            background-size: 768px;
+            }
+    }
+    @media screen and (min-width: 1320px) {
+        .first-screen {
+            background-size: 799px;
+            }
+    }

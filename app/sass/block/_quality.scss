@@ -1,0 +1,45 @@
+.quality {
+    &__body {
+        display: flex;
+        flex-direction: column;
+    }
+    &__content {
+        &-text {
+            font-weight: 400;
+            font-size: 19px;
+            line-height: 30px;
+            color: $black;
+            margin: 30px 0;
+        }
+    }
+    &__title {
+        &-text {
+            font-weight: 700;
+            font-size: 38px;
+            line-height: 46px;
+            background: $red-text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 60px;
+        }
+    }
+}
+@media screen and (min-width:904px) {
+    .quality {
+        &__body {
+            flex-direction: row;
+            margin-bottom: 60px;
+        }
+        &__content {
+            width: 60%;
+            margin-right: 30px;
+        }
+        &__title {
+            width: 40%;
+            margin-left: 30px;
+            margin-top: 30px;
+        }
+    }
+}

@@ -1,0 +1,148 @@
+.biography {
+    &__body {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: min-content min-content min-content;
+        &-img img {
+            border-radius: 12px;
+            height: 375px;
+            object-fit: cover;
+            width: 100%;
+        }
+        &-info {
+            display: flex;
+            flex-direction: column;
+            padding: 30px 0;
+        }
+        &-name {
+            font-weight: 700;
+            font-size: 38px;
+            line-height: 46px;
+            background: $red-text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 15px;
+        }
+        &-contact {
+            display: flex;
+            flex-direction: column;
+        }
+        &-jobtitle {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 22px;
+            color: $text;
+        }
+        &-mail {
+            margin: 10px 0;
+        }
+        &-profile {
+
+        }
+        &-resume {
+            padding-top: 30px;
+            border-top: 4px solid $separator;
+        }
+        &-text {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+            color: $black;
+            margin-bottom: 30px;
+        }
+        &-titletext {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 17px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: $main-alt;
+            margin-bottom: 15px;
+        }
+    }
+}
+@media screen and (min-width:648px) {
+    .biography {
+        &__body {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: min-content min-content;
+            &-img {
+                padding-bottom: 30px;
+            }
+            &-info {
+                justify-content: center;
+                padding-left: 30px;
+            }
+            &-resume {
+                grid-column: 1/-1;
+            }
+        }
+    }
+}
+@media screen and (min-width:904px) {
+    .biography {
+        &__body {
+            grid-template-columns: 300px 1fr;
+            grid-template-rows: min-content min-content;
+            &-img {
+                grid-row: 1/-1;
+            }
+            &-info {
+                padding-left: 60px;
+                padding-top: 0;
+            }
+            &-resume {
+                grid-column: 2/-1;
+                margin-left: 60px;
+            }
+        }
+    }
+}
+@media screen and (min-width:1320px) {
+    .biography {
+        &__body {
+            &-img {
+
+            }
+            &-info {
+
+            }
+            &-contact {
+                flex-direction: row;
+                align-items: center;
+            }
+            &-mail {
+                margin: 0;
+                position: relative;
+                margin: 0 26px;
+                &::after {
+                    content: '';
+                    position: absolute;
+                    width: 6px;
+                    height: 6px;
+                    border-radius: 3px;
+                    left: -15px;
+                    top: 5px;
+                    background-color: $separator;
+
+                }
+                &::before {
+                    content: '';
+                    position: absolute;
+                    width: 6px;
+                    height: 6px;
+                    border-radius: 3px;
+                    right: -15px;
+                    top: 5px;
+                    background-color: $separator;
+
+                }
+            }
+            &-resume {
+
+            }
+        }
+    }
+}

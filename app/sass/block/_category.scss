@@ -1,0 +1,99 @@
+.category {
+    display: flex;
+    flex-direction: column;
+    padding: 80px 0;
+
+    &__item {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        overflow: auto;
+        border-bottom: 4px solid rgba(255, 255, 255, 0.3);
+        &-btn {
+            text-align: right;
+            padding: 0;
+            box-shadow: none;
+            background-color: transparent;
+            border: none;
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 37px;
+            color: $text;
+            margin-right: 30px;
+            white-space: nowrap;
+            margin-bottom: 30px;
+            transition-duration: 0ms;
+            &:hover {
+                background-image: $red-text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+    }
+
+    &__info {
+        margin-bottom: 30px;
+        &-title {
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 37px;
+            color: $white;
+            margin: 30px 0;
+        }
+        &-text {
+            font-weight: 400;
+            font-size: 19px;
+            line-height: 30px;
+            color: $white;
+            opacity: 0.9;
+        }
+    }
+
+}
+
+@media screen and (min-width:648px) {
+    .category {
+        &__item{
+            &-btn {
+                margin-bottom: 60px;
+            }
+        }
+    }
+}
+@media screen and (min-width:904px) {
+    .category {
+        flex-direction: row;
+        align-items: center;
+        &__item {
+            flex-direction: column;
+            width: 50%;
+            border-right: 4px solid rgba(255, 255, 255, 0.3);
+            border-bottom: none;
+            overflow: none;
+            &-btn {
+                font-size: 38px;
+                line-height: 46px;
+                text-align: right;
+                margin-right: 60px;
+                margin-top: 14px;
+                margin-bottom: 13px;
+            }
+        }
+        &__info {
+            width: 50%;
+            margin-left: 60px;
+            &-title {
+
+            }
+            &-text {
+
+            }
+        }
+    }
+
+}
+@media screen and (min-width:1320px) {
+    .category {
+        padding: 80px;
+    }
+}

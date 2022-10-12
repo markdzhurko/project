@@ -1,0 +1,119 @@
+.team {
+    display: flex;
+    flex-direction: column;
+    &__body {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    }
+    &__pic{
+        &-img{
+            height: 500px;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 12px 12px 0px 0px;
+        }
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+        background: $bg;
+        margin-top: -4px;
+        border-radius: 0 0 12px 12px;
+        &-link {
+            display: flex;
+            align-items: center;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 17px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            &:hover path {
+                stroke: $accent;
+            }
+        }
+        &-title {
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 37px;
+            background: $red-text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-top: 5px;
+        }
+        &-name {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 20px;
+            color: $text;
+            margin-bottom: 6px;
+            margin-top: 30px;
+        }
+        &-job {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 22px;
+            color: $text;
+            opacity: 0.8;
+        }
+    }
+    &__btn{
+        align-self: center;
+        &-item {
+            align-self: center;
+            margin-top: 30px;
+            font-size: 0;
+            width: 16px;
+            height: 16px;
+            border-radius: 8px;
+            border: none;
+            background: $regular;
+            opacity: 0.2;
+            margin-right:15px;
+            &:hover {
+                opacity: 0.6;
+            }
+            &:active {
+                opacity: 1;
+            }
+        }
+        &--active {
+            opacity: 1;
+        }
+
+
+    }
+}
+@media screen and (min-width:904px) {
+    .team {
+        &__body {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+        &__pic {
+            width: 40%;
+            margin: 0;
+            height: 500px;
+            &-img {
+                border-radius: 12px 0 0 12px;
+            }
+        }
+        &__content {
+            width: 60%;
+            margin: 0;
+            border-radius: 0 12px 12px 0;
+            &-title {
+                font-size: 38px;
+                line-height: 46px;
+            }
+            &-name {
+                margin-top: auto;
+            }
+        }
+        &__btn {
+
+        }
+
+    }
+}

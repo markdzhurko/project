@@ -1,0 +1,151 @@
+.contact {
+    &__body {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+    &__info {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+        &-address {
+            font-weight: 400;
+            font-size: 21px;
+            line-height: 30px;
+            color: $main-alt;
+            border-bottom: 4px solid $separator;
+            padding-bottom: 30px;
+        }
+        &-tel {
+            font-weight: 400;
+            font-size: 21px;
+            line-height: 30px;
+            color: $main-soft;
+            padding: 30px 0;
+            align-self: flex-start;
+        }
+        &-email {
+            font-weight: 400;
+            font-size: 21px;
+            line-height: 30px;
+            padding-bottom: 30px;
+            align-self: flex-start;
+        }
+        &-link {
+            padding-top: 30px;
+            border-top: 4px solid $separator;
+        }
+
+        &-fb {
+            display: flex;
+            align-items: center;
+            width: 165px;
+            &:hover path {
+                fill: $accent;
+            }
+
+        }
+        &-text {
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 16px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            padding-left: 10px;
+        }
+
+    }
+    &__form {
+        background: $bg;
+        border-radius: 12px;
+        &-body {
+            display: flex;
+            flex-direction: column;
+            padding: 30px;
+        }
+        &-title {
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 37px;
+            background: $red-text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 30px;
+        }
+        &-name {
+
+        }
+        &-messages {
+            font-family: 'Montserrat','Arial', sans-serif;
+        }
+        &-secondtitle {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 17px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: $text;
+            padding-top: 15px;
+        }
+        &-phone {
+
+        }
+        &-email {
+
+        }
+
+        &-btn {
+            margin-top: 15px;
+            position: relative;
+            // &::after {
+            //     content: '';
+            // }
+            // &:hover::after {
+            //     background: url(../../img/Spinner.png);
+            //     background-size: contain;
+            //     background-repeat: no-repeat;
+            //     background-position: center center;
+            //     animation-name: spin;
+            //     animation-duration: 1s;
+            //     animation-timing-function: linear ;
+            //     animation-iteration-count: infinite;
+            // }
+        }
+
+    }
+}
+// @keyframes spin {
+//     from {
+//       transform: rotate(0deg)
+//     }
+//     to {
+//       transform: rotate(360deg)
+//     }
+//   }
+@media screen and (min-width:648px) {
+    .contact {
+        &__info {
+            margin-bottom: 60px;
+        }
+    }
+}
+@media screen and (min-width:904px) {
+    .contact {
+        &__body {
+            flex-direction: row;
+            margin: 0 -30px;
+            margin-bottom: 60px;
+        }
+        &__info {
+            width: 50%;
+            padding: 0 30px;
+        }
+        &__form {
+            width: 50%;
+            padding: 0 30px;
+        }
+    }
+}
+

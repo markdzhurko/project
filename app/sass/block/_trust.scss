@@ -1,0 +1,84 @@
+.trust {
+    padding-top: 60px;
+    margin-bottom: -12px;
+    &__title{
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $main-alt;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    &__list{
+        display: flex;
+        flex-direction: column;
+    }
+    &__card{
+        height: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &--hillel{
+            background-color: $bg-hillel;
+        }
+        &--wanabiz {
+            background-color: $bg-wannabiz;
+        }
+        &--tapgerine {
+            background-color: $bg-tapgerine;
+        }
+        &--3dlook {
+            background-color: $bg-3dlook;
+        }
+        &--orangear {
+            background-color: $bg-orangear;
+        }
+        &--adtelligent {
+            background-color: $bg-adtelligent;
+        }
+        &--clickky {
+            background-color: $bg-clickky;
+        }
+        &--eco {
+            background-color: $bg-eco;
+        }
+        &--ingratek {
+            background-color: $bg-ingratek;
+        }
+        &--city {
+            background-color: $bg-city;
+        }
+        &--artprint {
+            background-color: $bg-artprint;
+        }
+        &--ultimate {
+            background-color: $black;
+        }
+        &--disable {
+            display: none;
+        }
+    }
+}
+@media screen and (min-width:648px) {
+    .trust {
+        &__list{
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+        &__card {
+            width: 33.333%;
+            &--disable {
+                display: flex;
+            }
+        }
+    }
+}
+@media screen and (min-width:904px) {
+    .trust {
+        &__card {
+            width: 25%;
+        }
+    }
+}

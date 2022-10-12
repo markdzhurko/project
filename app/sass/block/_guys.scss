@@ -1,0 +1,104 @@
+.guys {
+    display: flex;
+    flex-direction: column;
+    &__title {
+        font-weight: 700;
+        font-size: 38px;
+        line-height: 46px;
+        background: $red-text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    &__list {
+        display: flex;
+        flex-direction: column;
+        padding: 30px 0;
+        &-card {
+            display: flex;
+            flex-direction: column;
+            padding: 30px 0;
+            width: 100%;
+        }
+        &-img {
+            border-radius: 12px;
+            margin-bottom: 15px;
+            object-fit: cover;
+            height: 300px;
+        }
+
+    }
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        &-item {
+
+        }
+        &-name {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 20px;
+            color: $main-alt;
+            padding-bottom: 5px;
+        }
+        &-jobtitle {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 22px;
+            color: $text;
+        }
+        &-link {
+            width: 32px;
+            height: 32px;
+            border-radius: 16px;
+            background-color: $bg;
+            position: relative;
+        }
+        &-svg {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-top: -5px;
+            margin-left: -4px;
+            &:hover path {
+                stroke: $accent;
+            }
+        }
+    }
+}
+@media screen and (min-width:648px) {
+    .guys {
+        &__title {
+            width: 635px;
+        }
+        &__list {
+            flex-wrap: wrap;
+            flex-direction: row;
+            margin: 0 -30px;
+            &-card {
+                width: 50%;
+                padding: 30px;
+            }
+            &-img {
+                height: 400px;
+            }
+        }
+    }
+}
+@media screen and (min-width:904px) {
+    .guys {
+        &__list {
+            &-card {
+                width: 33.333%;
+            }
+        }
+    }
+}
+@media screen and (min-width:1320px) {
+    .guys {
+        &__title {
+            width: 100%;
+        }
+    }
+}

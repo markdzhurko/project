@@ -1,0 +1,119 @@
+.gdpr {
+    &__body{
+        display: flex;
+        flex-direction: column;
+        &-pic{
+            border-radius: 12px;
+        }
+        &-title {
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 24px;
+            color: $main-alt;
+            padding-top: 30px;
+        }
+        &-date {
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 15px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: $text;
+            border-bottom: 4px solid $separator;
+            padding-top: 15px;
+            padding-bottom: 30px;
+        }
+        &-text {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+            color: $black;
+            padding: 30px 0;
+        }
+        &-attention {
+            font-weight: 700;
+            font-size: 38px;
+            line-height: 46px;
+            background: $red-text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: none;
+            padding-bottom: 30px;
+        }
+        &-secondtitle {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 20px;
+            color: $main-soft;
+            padding-bottom: 15px;
+        }
+        &-item {
+            list-style-type: decimal;
+            color: $accent;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 26px;
+            margin-bottom: 15px;
+        }
+        &-element {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 26px;
+            color: $black;
+        }
+        &-img {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            &::after {
+                content: 'This is what the ad personalization settings window in your Google Account looks like';
+                left: center;
+                position: absolute;
+                bottom: 7px;
+                height: 30px;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 22px;
+                text-align: center;
+                color: $text;
+            }
+        }
+        &-pic2 {
+            padding-bottom: 42px;
+        }
+        &-social {
+            display: flex;
+            padding-top: 30px;
+            padding-bottom: 60px;
+            border-top: 4px solid $separator;
+        }
+        &-link {
+            padding: 9px;
+            border-radius: 12px;
+            background-color: $bg;
+            margin-right: 10px;
+            &:hover {
+                background-color: $bg-alt;
+            }
+        }
+    }
+}
+@media screen and (min-width:648px) {
+    .gdpr {
+        &__body {
+            &-title {
+                font-size: 30px;
+                line-height: 37px;
+            }
+            &-attention {
+                display: block;
+            }
+            &-secondtitle {
+                font-size: 22px;
+                line-height: 27px;
+            }
+        }
+    }
+}

@@ -1,0 +1,68 @@
+.provider {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    &__title{
+        padding-top: 100px;
+        padding-bottom: 230px;
+        font-weight: 700;
+        font-size: 38px;
+        line-height: 46px;
+        text-align: center;
+        color: $white;
+        max-width: 250px;
+    }
+    &__btn {
+        cursor: pointer;
+        background-color: transparent;
+        border: none;
+        position: relative;
+        margin-bottom: 30px;
+        &-arrow {
+            border: none;
+            }
+            &:hover path {
+                stroke: $accent;
+            }
+
+        &-circuit {
+            opacity: 0.5;
+            border: 2px solid $white;
+            font-size: 0;
+            width: 42px;
+            height: 42px;
+            border-radius: 21px;
+            position: absolute;
+            left: -5px;
+            top: -17px;
+            &:hover {
+                border: 2px solid $accent;
+            }
+        }
+    }
+}
+    @media screen and (min-width: 648px) {
+        .provider{
+            &__title {
+                padding-top: 210px;
+                padding-bottom: 490px;
+                max-width: 100%;
+            }
+        }
+    }
+    @media screen and (min-width: 904px) {
+        .provider{
+            &__title {
+                padding-top: 245px;
+                padding-bottom: 360px;
+            }
+        }
+    }
+    @media screen and (min-width: 1320px) {
+        .provider{
+            &__title {
+                padding-top: 261px;
+                padding-bottom: 377px;
+            }
+        }
+    }
