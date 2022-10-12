@@ -2,6 +2,10 @@
     margin: 0;
     box-sizing: border-box;
 }
+::after,
+::before {
+    box-sizing: border-box;
+}
 .container {
     max-width: 1380px;
     min-width: 315px;
