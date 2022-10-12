@@ -38,9 +38,6 @@
         &-mail {
             margin: 10px 0;
         }
-        &-profile {
-
-        }
         &-resume {
             padding-top: 30px;
             border-top: 4px solid $separator;
@@ -103,12 +100,6 @@
 @media screen and (min-width:1320px) {
     .biography {
         &__body {
-            &-img {
-
-            }
-            &-info {
-
-            }
             &-contact {
                 flex-direction: row;
                 align-items: center;
@@ -139,9 +130,6 @@
                     background-color: $separator;
 
                 }
-            }
-            &-resume {
-
             }
         }
     }
