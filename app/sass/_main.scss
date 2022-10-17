@@ -95,3 +95,32 @@ a {
         border: 1px solid $white;
     }
 }
+.slick-dots {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+
+}
+.slick-dots li button {
+    align-self: center;
+    margin-top: 30px;
+    font-size: 0;
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    border: none;
+    background: $regular;
+    opacity: 0.2;
+    margin: 0 7.5px;
+    margin-top: 30px;
+}
+.slick-dots li button:hover {
+    opacity: 0.6;
+}
+.slick-dots li.slick-active button{
+    opacity: 1;
+}
+.slick-initialized .slick-slide {
+    display: flex;
+}
