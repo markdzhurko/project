@@ -120,7 +120,7 @@
                 position: absolute;
                 width: 12px;
                 height: 26px;
-                background-image: url(../../img/Slash-s.svg);
+                background-image: url(../img/Slash-s.svg);
                 background-repeat: no-repeat;
                 left: 0;
                 top: 0;
@@ -142,7 +142,7 @@
         }
     }
     &__list {
-        display: block;
+        display: none;
             &-box {
                 display: flex;
                 flex-direction: column;
@@ -300,7 +300,7 @@
                 &::before {
                     width: 21px;
                     height: 47px;
-                    background-image: url(../../img/Slash.svg);
+                    background-image: url(../img/Slash.svg);
                 }
             }
                 &__menu-btn {

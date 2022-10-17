@@ -219,7 +219,7 @@ a:hover {
 }
 
 .first-screen {
-  background-image: url(../../img/body-img.svg);
+  background-image: url(../img/body-img.svg);
   background-repeat: no-repeat;
   background-position: top center;
   background-size: 600px;

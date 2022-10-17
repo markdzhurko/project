@@ -90,31 +90,11 @@
         &-btn {
             margin-top: 15px;
             position: relative;
-            // &::after {
-            //     content: '';
-            // }
-            // &:hover::after {
-            //     background: url(../../img/Spinner.png);
-            //     background-size: contain;
-            //     background-repeat: no-repeat;
-            //     background-position: center center;
-            //     animation-name: spin;
-            //     animation-duration: 1s;
-            //     animation-timing-function: linear ;
-            //     animation-iteration-count: infinite;
-            // }
         }
 
     }
 }
-// @keyframes spin {
-//     from {
-//       transform: rotate(0deg)
-//     }
-//     to {
-//       transform: rotate(360deg)
-//     }
-//   }
+
 @media screen and (min-width:648px) {
     .contact {
         &__info {
