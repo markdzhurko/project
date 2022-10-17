@@ -105,6 +105,7 @@
         margin-top: 15px;
         margin-bottom: 10px;
         margin-left: -15px;
+        position: relative;
     }
     &__logo-page {
         font-weight: 400;
@@ -141,15 +142,20 @@
         }
     }
     &__list {
-        display: none;
+        display: block;
             &-box {
                 display: flex;
-            flex-direction: column;
-            min-width: 360px;
-            background-color: $white;
-            padding: 64px 12px 12px;
-            border-radius: 12px 12px 0px 0px;
-            position: relative;
+                flex-direction: column;
+                min-width: 360px;
+                background-color: $white;
+                padding: 64px 12px 12px;
+                border-radius: 12px 12px 0px 0px;
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                top: 93px;
+                width: 90%;
+                height: 100vh;
             }
             &-link {
                 font-weight: 700;
@@ -299,6 +305,9 @@
             }
                 &__menu-btn {
                     display: none;
+            }
+            &__list {
+                display: none;
             }
             &__item {
                 display: flex;
