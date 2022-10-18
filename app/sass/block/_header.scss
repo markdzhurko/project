@@ -12,7 +12,7 @@
         align-items: center;
         padding: 10px 0;
         background: rgba(245, 245, 250, 0.2);
-        margin: 0 -45px;
+        margin: 0 -30px;
     }
     &__lang {
         margin-left: 28px;
@@ -101,27 +101,26 @@
     }
     &__logo {
         height: 32px;
-        padding-right: 4px;
-        margin-top: 15px;
-        margin-bottom: 10px;
-        margin-left: -15px;
         position: relative;
     }
     &__logo-page {
+        align-self: flex-start;
         font-weight: 400;
         font-size: 20px;
         line-height: 24px;
         color: $white;
         position: relative;
-        padding-left: 14px;
+        padding-left: 18px;
+        white-space: nowrap;
         display: inline-block;
             &::before {
                 content: '';
                 position: absolute;
                 width: 12px;
                 height: 26px;
-                background-image: url(../img/Slash-s.svg);
+                background-image: url(../img/icons/Slash-s.svg);
                 background-repeat: no-repeat;
+                margin-left: 4px;
                 left: 0;
                 top: 0;
             }
@@ -199,9 +198,11 @@
                     padding-bottom: 3px;
                     color: $accent;
                 }
-                &:active {
+            &--active {
+                    border-bottom: 2px solid $accent;
+                    padding-bottom: 3px;
                     color: $accent;
-                }
+            }
         }
     }
     &--white {
@@ -254,6 +255,9 @@
                     &:hover {
                         color: $accent;
                     }
+                    &--active {
+                        color: $accent;
+                    }
                 }
             }
 
@@ -300,7 +304,7 @@
                 &::before {
                     width: 21px;
                     height: 47px;
-                    background-image: url(../img/Slash.svg);
+                    background-image: url(../img/icons/Slash.svg);
                 }
             }
                 &__menu-btn {
@@ -329,7 +333,9 @@
                 margin: 0;
                 padding-top: 50px;
             }
-
+            &__logo-page {
+                margin-top: 6px;
+            }
             &__menu {
                 justify-self: flex-end;
             }

@@ -1,13 +1,13 @@
 @font-face {
   font-family: 'Montserrat';
-  src: url("Montserrat-Regular.woff2") format("woff2"), url("Montserrat-Regular.woff") format("woff");
+  src: url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Montserrat';
-  src: url("Montserrat-Bold.woff2") format("woff2"), url("Montserrat-Bold.woff") format("woff");
+  src: url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
@@ -65,8 +65,8 @@
   line-height: 20px;
   padding: 18px 30px;
   background: #24A3FF;
-  -webkit-box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
-          box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+  -webkit-box-shadow: 0 0 20px rgba(36, 163, 255, 0.5);
+          box-shadow: 0 0 20px rgba(36, 163, 255, 0.5);
   border-radius: 12px;
   color: #ffffff;
   -webkit-transition-duration: 400ms;
@@ -163,7 +163,6 @@ a:hover {
 .slick-dots li button {
   -ms-flex-item-align: center;
       align-self: center;
-  margin-top: 30px;
   font-size: 0;
   width: 16px;
   height: 16px;
@@ -219,7 +218,7 @@ a:hover {
 }
 
 .first-screen {
-  background-image: url(../img/body-img.svg);
+  background-image: url(../img/icons/body-img.svg);
   background-repeat: no-repeat;
   background-position: top center;
   background-size: 600px;
@@ -266,7 +265,7 @@ a:hover {
           align-items: center;
   padding: 10px 0;
   background: rgba(245, 245, 250, 0.2);
-  margin: 0 -45px;
+  margin: 0 -30px;
 }
 
 .header__lang {
@@ -373,20 +372,19 @@ a:hover {
 
 .header__logo {
   height: 32px;
-  padding-right: 4px;
-  margin-top: 15px;
-  margin-bottom: 10px;
-  margin-left: -15px;
   position: relative;
 }
 
 .header__logo-page {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
   color: #ffffff;
   position: relative;
-  padding-left: 14px;
+  padding-left: 18px;
+  white-space: nowrap;
   display: inline-block;
 }
 
@@ -395,8 +393,9 @@ a:hover {
   position: absolute;
   width: 12px;
   height: 26px;
-  background-image: url(../../img/Slash-s.svg);
+  background-image: url(../img/icons/Slash-s.svg);
   background-repeat: no-repeat;
+  margin-left: 4px;
   left: 0;
   top: 0;
 }
@@ -424,7 +423,7 @@ a:hover {
 }
 
 .header__list {
-  display: block;
+  display: none;
 }
 
 .header__list-box {
@@ -497,7 +496,9 @@ a:hover {
   color: #F0145A;
 }
 
-.header__item-link:active {
+.header__item-link--active {
+  border-bottom: 2px solid #F0145A;
+  padding-bottom: 3px;
   color: #F0145A;
 }
 
@@ -561,6 +562,10 @@ a:hover {
   color: #F0145A;
 }
 
+.header--white .header__item-link--active {
+  color: #F0145A;
+}
+
 @media screen and (min-width: 648px) {
   .header {
     grid-template-columns: 1ft;
@@ -605,7 +610,7 @@ a:hover {
   .header__logo-page::before {
     width: 21px;
     height: 47px;
-    background-image: url(../../img/Slash.svg);
+    background-image: url(../img/icons/Slash.svg);
   }
   .header__menu-btn {
     display: none;
@@ -636,6 +641,9 @@ a:hover {
     grid-row: 1/-1;
     margin: 0;
     padding-top: 50px;
+  }
+  .header__logo-page {
+    margin-top: 6px;
   }
   .header__menu {
     justify-self: flex-end;
@@ -910,7 +918,6 @@ a:hover {
   font-weight: 700;
   font-size: 22px;
   line-height: 27px;
-  width: 300px;
   display: block;
 }
 
@@ -1764,7 +1771,7 @@ a:hover {
 
 @media screen and (min-width: 648px) {
   .guys__title {
-    width: 635px;
+    width: 588px;
   }
   .guys__list {
     -ms-flex-wrap: wrap;
@@ -2399,7 +2406,7 @@ a:hover {
   font-size: 16px;
   line-height: 20px;
   text-align: right;
-  color: #323264;
+  color: #46466E;
   margin: 10px 0;
 }
 
