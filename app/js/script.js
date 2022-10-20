@@ -22,3 +22,18 @@ $('.achievements__list').slick({
     slidesToScroll: 1,
     dots: true,
   });
+
+const buttonForm = document.querySelector('.it__body-btn');
+const form = document.querySelector('.it__form');
+const close = document.querySelector('.it__form-close')
+
+buttonForm.addEventListener('click', menuToggle);
+close.addEventListener('click', menuRemove);
+
+function menuToggle() {
+    form.classList.toggle('show');
+}
+function menuRemove() {
+    form.classList.remove('show');
+}
+console.log(form)
