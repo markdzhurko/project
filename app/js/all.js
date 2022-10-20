@@ -28,15 +28,23 @@ $('.achievements__list').slick({
     dots: true,
   });
 
+
+const burger = document.querySelector('.header__menu-btn');
+const burgerMenu = document.querySelector('.header__list');
+const burgerClose = document.querySelector('.header__list-close');
+const overlay = document.querySelector('.it__form-overlay');
 const buttonForm = document.querySelector('.it__body-btn');
 const form = document.querySelector('.it__form');
 const close = document.querySelector('.it__form-close');
-const overlay = document.querySelector('.it__form-overlay');
-const body = document.querySelector ('body')
+const overlayHeader = document.querySelector('.header__overlay');
+const body = document.querySelector ('body');
 
+burger.addEventListener('click', burgerToggle);
+burgerClose.addEventListener('click', burgerRemove);
 buttonForm.addEventListener('click', menuToggle);
 close.addEventListener('click', menuRemove);
 overlay.addEventListener('click', menuRemove);
+overlayHeader.addEventListener('click', burgerRemove);
 
 
 function menuToggle() {
@@ -49,4 +57,14 @@ function menuRemove() {
     overlay.classList.remove('show');
     body.classList.remove('no-scroll');
 }
-console.log(form, overlay, body)
+function burgerToggle() {
+    burgerMenu.classList.toggle('show');
+    overlayHeader.classList.toggle('show');
+}
+
+function burgerRemove() {
+    burgerMenu.classList.remove('show');
+    overlayHeader.classList.remove('show');
+    body.classList.remove('no-scroll');
+}
+
