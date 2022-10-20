@@ -63,37 +63,36 @@
         <div class="container container--s">
             <div class="it">
                 <div class="it__body">
-                    <img class="it__body-pic img-resonsive" src="./img/icons/Icon-it.png" alt="it">
+                    <img class="it__body-pic img-resonsive" src="./img/icons/Icon-it.png" id="formModal" alt="it">
                     <h1 class="it__body-title">IT and e-commerce</h1>
                     <p class="it__body-text">An endless stream of contracts, tax issues, labor relations, corporate papers - legal work distracts you from doing business. But there is not much work to do to hire an in-house lawyer.</p>
                     <p class="it__body-text">In addition, over time, the work will become the same type and uninteresting for a full-time lawyer. And we know very well how difficult it is to find a good candidate with experience in the field of information technology in Ukraine.</p>
-                    <button class="it__body-btn btn" type="button">Free consultation</button>
-                    <div class="it__form-ovarlay">
-                        <div class="it__form show">
-                            <button class="it__form-close">
-                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M7 7L25 25" stroke="#EC6F5D" stroke-width="2"/>
-                                    <path d="M25 7L7 25" stroke="#EC6F5D" stroke-width="2"/>
-                                </svg>
-                            </button>
-                            <form class="it__form-body" method="post" action="https:fom.in.ua/echo">
-                                <h1 class="it__form-title">We would like to help you</h1>
-                                <label>
-                                    <input class="it__form-name input" type="text" name="name" placeholder="Name" required>
-                                </label>
-                                <label>
-                                    <textarea class="it__form-messages input" name="messages" placeholder="Messages" cols="30" rows="5"></textarea>
-                                </label>
-                                <p class="it__form-secondtitle">How to answer you?</p>
-                                <label>
-                                    <input class="it__form-phone input" type="tel" name="phone-number" placeholder="Phone number" required>
-                                </label>
-                                <label>
-                                    <input class="it__form-email input" type="email" name="email" placeholder="Email" required>
-                                </label>
-                                <button class="it__form-btn btn" type="submit" >Send messages</button>
-                            </form>
-                        </div>
+                    <a class="it__body-btn btn" href="#formModal">Free consultation</a>
+                    <div class="it__form-overlay "></div>
+                    <div class="it__form" >
+                        <button class="it__form-close">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7 7L25 25" stroke="#EC6F5D" stroke-width="2"/>
+                                <path d="M25 7L7 25" stroke="#EC6F5D" stroke-width="2"/>
+                            </svg>
+                        </button>
+                        <form class="it__form-body" method="post" action="https:fom.in.ua/echo">
+                            <h1 class="it__form-title">We would like to help you</h1>
+                            <label>
+                                <input class="it__form-name input" type="text" name="name" placeholder="Name" required>
+                            </label>
+                            <label>
+                                <textarea class="it__form-messages input" name="messages" placeholder="Messages" cols="30" rows="5"></textarea>
+                            </label>
+                            <p class="it__form-secondtitle">How to answer you?</p>
+                            <label>
+                                <input class="it__form-phone input" type="tel" name="phone-number" placeholder="Phone number" required>
+                            </label>
+                            <label>
+                                <input class="it__form-email input" type="email" name="email" placeholder="Email" required>
+                            </label>
+                            <button class="it__form-btn btn" type="submit" >Send messages</button>
+                        </form>
                     </div>
                 </div>
             </div>

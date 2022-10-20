@@ -28,6 +28,9 @@
         }
         &-btn {
             margin-bottom: 60px;
+            &:hover {
+               color: $white;
+            }
         }
     }
     &__form {
@@ -37,10 +40,26 @@
         opacity: 0;
         position: absolute;
         margin-bottom: 60px;
-        width: 650px;
+        width: 315px;
         max-width: 100%;
-        &-ovarlay {
-            background: $bg;
+        transform: translateY(-90%);
+            &-overlay {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            background-color: $main-alt;
+            opacity: 0;
+            visibility: hidden;
+            cursor: pointer;
+            transition: all .3s ease;
+        }
+        &-overlay.show {
+            visibility: visible;
+            opacity: 1;
         }
         &-close {
             position: absolute;
@@ -95,6 +114,11 @@
         position: relative;
         visibility: visible;
         opacity: 1;
-
+    }
+}
+@media screen and (min-width:648px) {
+    .it__form {
+        width: 650px;
+        transform: translateY(-60%);
     }
 }

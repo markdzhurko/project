@@ -18,6 +18,11 @@
           box-sizing: border-box;
 }
 
+.no-scroll {
+  overflow: hidden;
+  height: 100%;
+}
+
 ::after,
 ::before {
   -webkit-box-sizing: border-box;
@@ -2004,6 +2009,10 @@ a:hover {
   margin-bottom: 60px;
 }
 
+.it__body-btn:hover {
+  color: #ffffff;
+}
+
 .it__form {
   background: #F5F5FA;
   border-radius: 12px;
@@ -2011,12 +2020,31 @@ a:hover {
   opacity: 0;
   position: absolute;
   margin-bottom: 60px;
-  width: 650px;
+  width: 315px;
   max-width: 100%;
+  -webkit-transform: translateY(-90%);
+          transform: translateY(-90%);
 }
 
-.it__form-ovarlay {
-  background: #F5F5FA;
+.it__form-overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #323264;
+  opacity: 0;
+  visibility: hidden;
+  cursor: pointer;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.it__form-overlay.show {
+  visibility: visible;
+  opacity: 1;
 }
 
 .it__form-close {
@@ -2081,6 +2109,14 @@ a:hover {
   position: relative;
   visibility: visible;
   opacity: 1;
+}
+
+@media screen and (min-width: 648px) {
+  .it__form {
+    width: 650px;
+    -webkit-transform: translateY(-60%);
+            transform: translateY(-60%);
+  }
 }
 
 .area {
