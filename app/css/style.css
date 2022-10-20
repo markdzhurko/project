@@ -486,8 +486,8 @@ a:hover {
           flex-direction: column;
   min-width: 360px;
   background-color: #ffffff;
-  padding: 64px 12px 12px;
-  border-radius: 12px 12px 0px 0px;
+  padding: 60px 12px;
+  border-radius: 12px;
 }
 
 .header__list-link {
@@ -504,19 +504,6 @@ a:hover {
 .header__list-link:active {
   background-color: #E6E6F0;
   color: #24A3FF;
-}
-
-.header__list-btn {
-  background-image: url(../../img/close.svg);
-  background-repeat: no-repeat;
-  position: absolute;
-  border: none;
-  background-color: transparent;
-  font-size: 0;
-  width: 32px;
-  height: 32px;
-  right: 12px;
-  top: 12px;
 }
 
 .header__list.show {
